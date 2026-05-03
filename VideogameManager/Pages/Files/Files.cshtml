@@ -1,0 +1,42 @@
+﻿@page
+@model VideogameManager.Pages.Files.FilesModel
+@{
+    ViewData["Title"] = "File Management";
+}
+
+<div class="container mt-4">
+    <h1>File Management & Logs</h1>
+    
+    <div class="card mt-4">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Activity Log (activity_log.txt)</h5>
+            <a asp-page="/Files" class="btn btn-sm btn-outline-light">Refresh Log</a>
+        </div>
+        <div class="card-body bg-light">
+            @if (Model.LogEntries.Length == 0)
+            {
+                <p class="text-muted">No activity recorded yet.</p>
+            }
+            else
+            {
+                <pre class="mb-0" style="max-height: 400px; overflow-y: auto;">
+                    @foreach (var line in Model.LogEntries)
+                    {
+                        @line
+                        @Html.Raw("\n")
+                    }
+                </pre>
+            }
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h3>Export Data</h3>
+        <p class="text-muted">Available formats (Coming soon):</p>
+        <div class="btn-group">
+            <button class="btn btn-outline-primary" disabled>Export JSON</button>
+            <button class="btn btn-outline-success" disabled>Export CSV</button>
+            <button class="btn btn-outline-info" disabled>Export XML</button>
+        </div>
+    </div>
+</div>

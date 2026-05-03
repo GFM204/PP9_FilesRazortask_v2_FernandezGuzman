@@ -1,0 +1,21 @@
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using VideogameManager.Services;
+
+namespace VideogameManager.Pages.Files
+{
+    public class FilesModel : PageModel
+    {
+        private readonly GameService _gameService;
+        public string[] LogEntries { get; private set; } = Array.Empty<string>();
+
+        public FilesModel(GameService gameService)
+        {
+            _gameService = gameService;
+        }
+
+        public void OnGet()
+        {
+            LogEntries = _gameService.GetLogEntries();
+        }
+    }
+}
