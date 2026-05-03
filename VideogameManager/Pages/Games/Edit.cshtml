@@ -1,0 +1,57 @@
+﻿@page "{id:int}"
+@model VideogameManager.Pages.Games.EditModel
+
+@{
+    ViewData["Title"] = "Edit Game";
+}
+
+<div class="container">
+    <h1>Editar Joc: @Model.Game.Title</h1>
+
+    <form method="post" class="mt-4">
+        <input type="hidden" asp-for="Game.Id" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="mb-3">
+            <label asp-for="Game.Title" class="form-label">Title</label>
+            <input asp-for="Game.Title" class="form-control" />
+            <span asp-validation-for="Game.Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Game.Genre" class="form-label">Genre</label>
+            <input asp-for="Game.Genre" class="form-control" />
+            <span asp-validation-for="Game.Genre" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="Game.Year" class="form-label">Year</label>
+                <input asp-for="Game.Year" class="form-control" />
+                <span asp-validation-for="Game.Year" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label asp-for="Game.Score" class="form-label">Score (0-10)</label>
+                <input asp-for="Game.Score" class="form-control" step="0.1" />
+                <span asp-validation-for="Game.Score" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Game.Description" class="form-label">Description</label>
+            <textarea asp-for="Game.Description" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="Game.Description" class="text-danger"></span>
+        </div>
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success">Save</button>
+            <a asp-page="./Index" class="btn btn-secondary">Back to list</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
