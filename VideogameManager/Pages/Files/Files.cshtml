@@ -7,57 +7,75 @@
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1><i class="bi bi-file-earmark-binary"></i> File Management</h1>
-        <a asp-page="/Games/Index" class="btn btn-secondary">Back to Games</a>
+        <a asp-page="/Games/Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Games
+        </a>
     </div>
 
     <div class="row">
-        <div class="col-md-6 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm border-primary">
                 <div class="card-header bg-primary text-white">
-                    <h5 class="mb-0"><i class="bi bi-code-slash"></i> JSON Data Persistence</h5>
+                    <h5 class="mb-0"><i class="bi bi-code-slash"></i> JSON Persistence</h5>
                 </div>
                 <div class="card-body">
-                    <p class="text-muted">Save the current list of games to <code>games.json</code> or load existing data from the file.</p>
-                    
+                    <p class="text-muted small">Full database backup. Use Import to overwrite the current list with the <code>games.json</code> file content.</p>
                     <form method="post">
                         <div class="d-grid gap-2">
-                            <button type="submit" asp-page-handler="ExportJson" class="btn btn-primary">
-                                <i class="bi bi-download"></i> Export to JSON
+                            <button type="submit" asp-page-handler="ExportJson" class="btn btn-sm btn-primary">
+                                <i class="bi bi-download"></i> Export JSON
                             </button>
-                            <button type="submit" asp-page-handler="ImportJson" class="btn btn-outline-primary"
+                            <button type="submit" asp-page-handler="ImportJson" class="btn btn-sm btn-outline-primary"
                                     onclick="return confirm('Are you sure? This will overwrite the current in-memory list.')">
-                                <i class="bi bi-upload"></i> Import from JSON
+                                <i class="bi bi-upload"></i> Import JSON
                             </button>
                         </div>
                     </form>
                 </div>
-                <div class="card-footer text-center bg-transparent">
-                    <small class="text-muted">Status: <strong>Active</strong> (Auto-sync enabled)</small>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <small class="text-muted"><code>games.json</code></small>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm border-success">
                 <div class="card-header bg-success text-white">
                     <h5 class="mb-0"><i class="bi bi-filetype-csv"></i> CSV Export</h5>
                 </div>
                 <div class="card-body">
-                    <p class="text-muted">Generate a <code>games.csv</code> file with headers. Perfect for opening your library in Excel.</p>
-                    
+                    <p class="text-muted small">Download the game list in a flat format compatible with Excel or Google Sheets.</p>
                     <form method="post">
                         <div class="d-grid gap-2">
-                            <button type="submit" asp-page-handler="ExportCsv" class="btn btn-success">
+                            <button type="submit" asp-page-handler="ExportCsv" class="btn btn-sm btn-success">
                                 <i class="bi bi-file-earmark-arrow-down"></i> Download CSV
-                            </button>
-                            <button class="btn btn-outline-secondary" disabled>
-                                <i class="bi bi-filetype-xml"></i> Export to XML (Soon)
                             </button>
                         </div>
                     </form>
                 </div>
-                <div class="card-footer text-center bg-transparent">
-                    <small class="text-muted">Format: Id, Title, Genre, Year, Score</small>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <small class="text-muted"><code>games.csv</code></small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-info">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-filetype-xml"></i> XML Ranking</h5>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted small">Generates a ranking file ordered by <strong>Score</strong> (descending) using LINQ queries.</p>
+                    <form method="post">
+                        <div class="d-grid gap-2">
+                            <button type="submit" asp-page-handler="ExportXml" class="btn btn-sm btn-info text-white">
+                                <i class="bi bi-trophy"></i> Generate Ranking XML
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <small class="text-muted"><code>games_ranking.xml</code></small>
                 </div>
             </div>
         </div>
@@ -69,21 +87,20 @@
                 <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
                     <h5 class="mb-0"><i class="bi bi-journal-text"></i> Activity Log</h5>
                     <a asp-page="/Files" class="btn btn-sm btn-outline-light">
-                        <i class="bi bi-arrow-clockwise"></i> Refresh
+                        <i class="bi bi-arrow-clockwise"></i> Refresh Log
                     </a>
                 </div>
                 <div class="card-body bg-light">
                     @if (Model.LogEntries == null || Model.LogEntries.Length == 0)
                     {
-                        <div class="text-center py-4">
-                            <i class="bi bi-info-circle text-muted fs-2"></i>
-                            <p class="text-muted mt-2">No activity recorded yet in <code>activity_log.txt</code>.</p>
+                        <div class="text-center py-3">
+                            <p class="text-muted mb-0">No activity recorded in <code>activity_log.txt</code>.</p>
                         </div>
                     }
                     else
                     {
-                        <div class="bg-white border rounded p-3" style="max-height: 350px; overflow-y: auto;">
-                            <pre class="mb-0" style="font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; line-height: 1.4;">@foreach (var line in Model.LogEntries){
+                        <div class="bg-white border rounded p-3" style="max-height: 300px; overflow-y: auto;">
+                            <pre class="mb-0" style="font-family: 'Courier New', Courier, monospace; font-size: 0.85rem;">@foreach (var line in Model.LogEntries){
                             @line
                             @Html.Raw("\n")
                             }
@@ -91,8 +108,8 @@
                         </div>
                     }
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Activity is logged automatically during Create, Update, and Delete operations.</small>
+                <div class="card-footer text-muted small">
+                    Changes are logged automatically on Create, Update, and Delete actions.
                 </div>
             </div>
         </div>

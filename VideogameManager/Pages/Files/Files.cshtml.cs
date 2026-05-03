@@ -41,5 +41,10 @@ namespace VideogameManager.Pages.Files
 
             return File(bytes, "text/csv", "games.csv");
         }
+        public IActionResult OnPostExportXml()
+        {
+            _gameService.GenerateRankingXml();
+            return RedirectToPage();
+        }
     }
 }

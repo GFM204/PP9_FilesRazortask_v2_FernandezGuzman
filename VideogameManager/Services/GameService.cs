@@ -6,6 +6,8 @@ namespace VideogameManager.Services
     {
         private readonly GameRepository _repository = new();
         private readonly GamesExporter _csvExporter = new();
+        private readonly GamesRanking _rankingService = new();
+
         private readonly List<Game> _games;
         private int _nextId;
 
@@ -79,6 +81,10 @@ namespace VideogameManager.Services
         {
             _csvExporter.ExportToCsv(_games);
             return _csvExporter.GetCsvBytes();
+        }
+        public void GenerateRankingXml()
+        {
+            _rankingService.ExportToXml(_games);
         }
     }
 }
