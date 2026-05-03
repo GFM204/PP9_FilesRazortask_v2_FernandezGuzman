@@ -1,0 +1,300 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\games\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\games\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\games\\detail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\games\\detail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\games\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\games\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|c:\\users\\guzma\\desktop\\ejerciciosprogram\\videogamemanager\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CAC378B3-E587-25FE-4D04-F3F78F6AB66D}|VideogameManager.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-03T09:52:00.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:44:55.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:43:20.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:44:52.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:44:51.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:44:49.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Detail.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Games\\Detail.cshtml.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Detail.cshtml.cs",
+              "RelativeToolTip": "Pages\\Games\\Detail.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T09:42:13.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Games\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Games\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T09:39:06.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Games\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Games\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:38:51.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Games\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Games\\Detail.cshtml",
+              "RelativeToolTip": "Pages\\Games\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T09:38:41.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "Models\\Game.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Models\\Game.cs",
+              "RelativeToolTip": "Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T09:38:10.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "Services\\GameService.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Services\\GameService.cs",
+              "RelativeToolTip": "Services\\GameService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T09:36:04.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\wwwroot\\favicon.ico",
+              "RelativeDocumentMoniker": "wwwroot\\favicon.ico",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "RelativeToolTip": "wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2026-05-03T09:34:18.078Z",
+              "EditorCaption": " - Icon [32x32, 32 bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T11:38:51.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T11:36:15.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-13T11:36:00.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\EjerciciosProgram\\VideogameManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:24:07.299Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

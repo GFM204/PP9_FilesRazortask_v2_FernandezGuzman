@@ -1,0 +1,39 @@
+﻿@page "{id:int}"
+@model VideogameManager.Pages.Games.DetailModel
+@{
+    ViewData["Title"] = "Game Details";
+}
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-page="./Index">Llista</a></li>
+            <li class="breadcrumb-item active">@Model.CurrentGame.Title</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h1 class="h3 mb-0">Details of @Model.CurrentGame.Title</h1>
+        </div>
+        <div class="card-body">
+            <h2 class="h5">Description</h2>
+            <p class="text-muted">@Model.CurrentGame.Description</p>
+            
+            <hr />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Id:</strong> @Model.CurrentGame.Id</p>
+                    <p><strong>Genre:</strong> <span class="badge bg-info text-dark">@Model.CurrentGame.Genre</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Year:</strong> @Model.CurrentGame.Year</p>
+                    <p><strong>Score:</strong> @Model.CurrentGame.Score / 100</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-page="./Index" class="btn btn-secondary">Tornar enrere</a>
+        </div>
+    </div>
+</div>

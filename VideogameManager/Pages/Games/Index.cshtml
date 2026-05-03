@@ -1,0 +1,34 @@
+﻿@page 
+@model VideogameManager.Pages.Games.IndexModel
+@{
+    ViewData["title"] = "Llista de videojocs";
+}
+
+<h3>
+    <table>
+        <thead> 
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Genre</td>
+                <td>Year</td>
+                <td>Score</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var game in Model.Games)
+            {
+                <tr>
+                    <td>@game.Id</td>
+                    <td>@game.Title</td>
+                    <td>@game.Genre</td>
+                    <td>@game.Year</td>
+                    <td>@game.Score</td>
+                    <td>
+                        <a asp-page="Detail" asp-route-id="@game.Id" class="btn btn-sm btn-outline-info">Detail</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</h3>
