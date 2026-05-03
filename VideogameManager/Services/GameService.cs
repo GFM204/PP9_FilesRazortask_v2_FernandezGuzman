@@ -5,6 +5,7 @@ namespace VideogameManager.Services
     public class GameService
     {
         private readonly GameRepository _repository = new();
+        private readonly GamesExporter _csvExporter = new();
         private readonly List<Game> _games;
         private int _nextId;
 
@@ -73,6 +74,11 @@ namespace VideogameManager.Services
         {
             if (!File.Exists(_logPath)) return Array.Empty<string>();
             return File.ReadAllLines(_logPath);
+        }
+        public byte[] GenerateAndGetCsv()
+        {
+            _csvExporter.ExportToCsv(_games);
+            return _csvExporter.GetCsvBytes();
         }
     }
 }

@@ -12,12 +12,12 @@
 
     <div class="row">
         <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-sm border-primary">
                 <div class="card-header bg-primary text-white">
                     <h5 class="mb-0"><i class="bi bi-code-slash"></i> JSON Data Persistence</h5>
                 </div>
                 <div class="card-body">
-                    <p class="text-muted">Save the current list of games to <code>games.json</code> or load existing data from the file (this will overwrite the current list).</p>
+                    <p class="text-muted">Save the current list of games to <code>games.json</code> or load existing data from the file.</p>
                     
                     <form method="post">
                         <div class="d-grid gap-2">
@@ -31,23 +31,33 @@
                         </div>
                     </form>
                 </div>
-                <div class="card-footer text-center">
-                    <small class="text-muted">File: <code>games.json</code></small>
+                <div class="card-footer text-center bg-transparent">
+                    <small class="text-muted">Status: <strong>Active</strong> (Auto-sync enabled)</small>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-header bg-secondary text-white">
-                    <h5 class="mb-0"><i class="bi bi-file-earmark-arrow-up"></i> Other Formats</h5>
+            <div class="card h-100 shadow-sm border-success">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="bi bi-filetype-csv"></i> CSV Export</h5>
                 </div>
                 <div class="card-body">
-                    <p class="text-muted">Additional export options (CSV and XML support coming soon):</p>
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-outline-secondary" disabled>Export to CSV</button>
-                        <button class="btn btn-outline-secondary" disabled>Export to XML</button>
-                    </div>
+                    <p class="text-muted">Generate a <code>games.csv</code> file with headers. Perfect for opening your library in Excel.</p>
+                    
+                    <form method="post">
+                        <div class="d-grid gap-2">
+                            <button type="submit" asp-page-handler="ExportCsv" class="btn btn-success">
+                                <i class="bi bi-file-earmark-arrow-down"></i> Download CSV
+                            </button>
+                            <button class="btn btn-outline-secondary" disabled>
+                                <i class="bi bi-filetype-xml"></i> Export to XML (Soon)
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-transparent">
+                    <small class="text-muted">Format: Id, Title, Genre, Year, Score</small>
                 </div>
             </div>
         </div>
@@ -55,7 +65,7 @@
 
     <div class="row">
         <div class="col-12">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm border-dark">
                 <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
                     <h5 class="mb-0"><i class="bi bi-journal-text"></i> Activity Log</h5>
                     <a asp-page="/Files" class="btn btn-sm btn-outline-light">
@@ -72,14 +82,12 @@
                     }
                     else
                     {
-                        <div class="bg-white border rounded p-3" style="max-height: 400px; overflow-y: auto;">
-                            <pre class="mb-0" style="font-family: 'Courier New', Courier, monospace; font-size: 0.9rem;">
-                                @foreach (var line in Model.LogEntries)
-                                {
-                                    @line
-                                    @Html.Raw("\n")
-                                }
-                            </pre>
+                        <div class="bg-white border rounded p-3" style="max-height: 350px; overflow-y: auto;">
+                            <pre class="mb-0" style="font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; line-height: 1.4;">@foreach (var line in Model.LogEntries){
+                            @line
+                            @Html.Raw("\n")
+                            }
+</pre>
                         </div>
                     }
                 </div>

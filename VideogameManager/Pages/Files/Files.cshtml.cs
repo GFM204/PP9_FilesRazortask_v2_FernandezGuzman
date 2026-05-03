@@ -30,5 +30,16 @@ namespace VideogameManager.Pages.Files
             _gameService.ImportFromJson();
             return RedirectToPage();
         }
+        public IActionResult OnPostExportCsv()
+        {
+            byte[] bytes = _gameService.GenerateAndGetCsv();
+
+            if (bytes.Length == 0)
+            {
+                return RedirectToPage(); 
+            }
+
+            return File(bytes, "text/csv", "games.csv");
+        }
     }
 }
