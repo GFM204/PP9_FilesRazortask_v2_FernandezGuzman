@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "Title": "The Legend of Zelda: TotK",
+    "Genre": "Adventure",
+    "Year": 2023,
+    "Score": 9,
+    "Description": "Open-world action RPG"
+  },
+  {
+    "Id": 2,
+    "Title": "Clair Obscur: Expedition 33",
+    "Genre": "Action/RPG",
+    "Year": 2025,
+    "Score": 10,
+    "Description": "Expedition 33 is an exploration and survival game set in a hostile world, where a group of colonists struggles to settle on an unknown planet while facing environmental dangers and constant strategic decisions."
+  }
+]
