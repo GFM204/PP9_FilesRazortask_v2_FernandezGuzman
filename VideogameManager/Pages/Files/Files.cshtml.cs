@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using VideogameManager.Services;
 
@@ -16,6 +17,18 @@ namespace VideogameManager.Pages.Files
         public void OnGet()
         {
             LogEntries = _gameService.GetLogEntries();
+        }
+
+        public IActionResult OnPostExportJson()
+        {
+            _gameService.ExportToJson();
+            return RedirectToPage();
+        }
+
+        public IActionResult OnPostImportJson()
+        {
+            _gameService.ImportFromJson();
+            return RedirectToPage();
         }
     }
 }

@@ -1,31 +1,35 @@
-﻿using System.IO;
-using VideogameManager.Models;
+﻿using VideogameManager.Models;
 
 namespace VideogameManager.Services
 {
     public class GameService
     {
+        private readonly GameRepository _repository = new();
+        private readonly List<Game> _games;
+        private int _nextId;
+
         private readonly string _logPath = Path.Combine(Directory.GetCurrentDirectory(), "activity_log.txt");
 
-        private readonly List<Game> _games = new()
+        public GameService()
         {
-            new() { Id=1, Title="The Legend of Zelda: TotK", Genre="Adventure",
-                    Year=2023, Score=9.8, Description="Open-world action RPG" },
-            new() { Id=2, Title="Elden Ring", Genre="RPG",
-                    Year=2022, Score=9.5, Description="Open-world soulslike" },
-            new() { Id=3, Title="Celeste", Genre="Platformer",
-                    Year=2018, Score=9.0, Description="Precision platformer" },
-        };
-        private int _nextId = 4;
+            _games = _repository.LoadAll();
+
+            _nextId = _games.Any() ? _games.Max(g => g.Id) + 1 : 1;
+        }
 
         public List<Game> GetAll() => _games;
+
         public Game? GetById(int id) => _games.FirstOrDefault(g => g.Id == id);
+
         public void Add(Game game)
         {
             game.Id = _nextId++;
             _games.Add(game);
             LogActivity("CREATED", game.Title);
+
+            ExportToJson();
         }
+
         public void Update(Game game)
         {
             var index = _games.FindIndex(g => g.Id == game.Id);
@@ -33,17 +37,29 @@ namespace VideogameManager.Services
             {
                 _games[index] = game;
                 LogActivity("UPDATED", game.Title);
+                ExportToJson();
             }
-
         }
+
         public void Delete(int id)
         {
-            Game game = GetById(id);
+            var game = GetById(id);
             if (game != null)
             {
                 LogActivity("DELETED", game.Title);
                 _games.Remove(game);
+                ExportToJson(); 
             }
+        }
+
+        public void ExportToJson() => _repository.SaveAll(_games);
+
+        public void ImportFromJson()
+        {
+            var importedGames = _repository.LoadAll();
+            _games.Clear();
+            _games.AddRange(importedGames);
+            _nextId = _games.Any() ? _games.Max(g => g.Id) + 1 : 1;
         }
 
         private void LogActivity(string action, string title)
@@ -56,7 +72,6 @@ namespace VideogameManager.Services
         public string[] GetLogEntries()
         {
             if (!File.Exists(_logPath)) return Array.Empty<string>();
-
             return File.ReadAllLines(_logPath);
         }
     }
