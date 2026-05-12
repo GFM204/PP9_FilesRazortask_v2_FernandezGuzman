@@ -25,15 +25,17 @@
                 <dt class="col-sm-2">Score</dt>
                 <dd class="col-sm-10">@Model.Game.Score / 10</dd>
 
+                <dt class="col-sm-2">Developer</dt>
+                <dd class="col-sm-10">@Model.Game.Developer?.Name</dd>
+
                 <dt class="col-sm-2">Description</dt>
                 <dd class="col-sm-10">@Model.Game.Description</dd>
+
             </dl>
         </div>
     </div>
 
     <form method="post">
-        @* The ID is sent via the URL route "{id:int}", so a hidden input isn't strictly
-           required, but we could use one if the route didn't include it. *@
         <button type="submit" class="btn btn-danger">Confirm Delete</button>
         <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
     </form>

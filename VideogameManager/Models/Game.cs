@@ -5,6 +5,7 @@ namespace VideogameManager.Models
 {
     public class Game
     {
+        [Key]
         public int Id { get; set; }
         
         [Required(ErrorMessage = "Must input a title")]
@@ -20,6 +21,10 @@ namespace VideogameManager.Models
         [Range(0d, 10d, ErrorMessage = "Score must be between 0 and 10")]
         public double Score { get; set; }
 
-        public string Description { get; set; } = string.Empty;
+        public string? Description { get; set; } = string.Empty;
+        public int DeveloperId { get; set; }
+
+        public Developer? Developer { get; set; }
+
     }
 }

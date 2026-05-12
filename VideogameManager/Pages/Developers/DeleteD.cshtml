@@ -1,0 +1,61 @@
+﻿@page "{id:int}"
+@model VideogameManager.Pages.Developers.DeleteDModel
+@{
+    ViewData["Title"] = "Delete Developer";
+    bool hasGames = Model.Developer?.Games != null && Model.Developer.Games.Any();
+}
+
+<div class="container mt-4">
+    <div class="alert alert-danger">
+        <h3>Are you sure you want to delete this game?</h3>
+        <p>This action cannot be undone.</p>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0">@Model.Developer.Name</h4>
+        </div>
+        @if (hasGames)
+        {
+            <div class="card-body">
+                <p> Cannot delete this developer.</p>
+                <p>
+                    This developer is still linked to <strong>@Model.Developer.Games.Count()</strong> games.
+                    Please delete or reassign the games first.
+                </p>
+            </div>
+        }
+
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-2">Country</dt>
+                <dd class="col-sm-10">@Model.Developer.Country</dd>
+
+                <dt class="col-sm-2">Founded Year</dt>
+                <dd class="col-sm-10">@Model.Developer.FoundedYear</dd>      
+
+            </dl>
+            <dl class="row">
+                <form method="post">
+                    <a asp-page="./IndexD" class="btn btn-secondary">Cancel</a>
+                        @if (hasGames)
+                        {
+                        <button type="button" disabled style="background-color: #caC; cursor: not-allowed;">
+                            Confirm Delete
+                        </button>
+                        }
+                        else
+                        {
+                        <button type="submit" style="background-color: #e74c3c; cursor: pointer;">
+                            Confirm Delete
+                        </button>
+                        }
+
+                </form>
+            </dl>
+
+        </div>
+
+    </div>
+
+</div>

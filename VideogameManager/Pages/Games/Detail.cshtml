@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Game Details";
 }
+
 <div class="container mt-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -29,11 +30,13 @@
                 <div class="col-md-6">
                     <p><strong>Year:</strong> @Model.CurrentGame.Year</p>
                     <p><strong>Score:</strong> @Model.CurrentGame.Score / 100</p>
+                    <p><strong>Developer Name:</strong> @(Model.CurrentGame.Developer?.Name ??  "Unknown")</p>
+
                 </div>
             </div>
         </div>
         <div class="card-footer">
-            <a asp-page="./Index" class="btn btn-secondary">Tornar enrere</a>
+            <a asp-page="./Index" class="btn btn-secondary">Turn Back</a>
         </div>
     </div>
 </div>

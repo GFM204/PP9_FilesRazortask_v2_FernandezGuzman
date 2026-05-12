@@ -33,6 +33,13 @@
             <input asp-for="Game.Score" class="form-control" />
             <span asp-validation-for="Game.Score" class="text-danger"></span>
         </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Game.DeveloperId" class="form-label">Developer</label>
+            <select asp-for="Game.DeveloperId" asp-items="Model.Developers" class="form-control">
+                <option value="" >Select Developer</option>
+            </select>
+            <span asp-validation-for="Game.DeveloperId" class="text-danger"></span>
+        </div>
     </div>
 
     <div class="mb-3">

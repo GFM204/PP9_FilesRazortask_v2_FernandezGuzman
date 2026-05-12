@@ -1,0 +1,36 @@
+﻿@page
+@model VideogameManager.Pages.Developers.IndexDModel
+@{
+    ViewData["title"] = "Llista de Developers";
+}
+
+<h3>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Country</td>
+                <td>Founded Year</td>
+                <td>Games</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dev in Model.Developers)
+            {
+                <tr>
+                    <td>@dev.Name</td>
+                    <td>@dev.Country</td>
+                    <td>@dev.FoundedYear</td>
+                    <td>@dev.Games.Count</td>
+                    <td>
+                        <a asp-page="DetailsD" asp-route-id="@dev.Id" class="btn btn-sm btn-outline-info">Details</a>
+                    </td>
+                    <td>
+                        <a asp-page="DeleteD" asp-route-id="@dev.Id" class="btn btn-sm btn-outline-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</h3>
