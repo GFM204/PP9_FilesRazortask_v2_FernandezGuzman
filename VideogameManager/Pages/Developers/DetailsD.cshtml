@@ -1,0 +1,43 @@
+﻿@page "{id:int}"
+@model VideogameManager.Pages.Developers.DetailsDModel
+@{
+    ViewData["Title"] = "Developer Details";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-page="./Index">Llista</a></li>
+            <li class="breadcrumb-item active">@Model.Developer.Name</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h1 class="h3 mb-0">Details of @Model.Developer.Name</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Id:</strong> @Model.Developer.Id</p>
+                    <p><strong>Name:</strong> <span class="badge bg-info text-dark">@Model.Developer.Name</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Founded Year:</strong> @Model.Developer.FoundedYear</p>
+                    <p><strong>Country:</strong> @Model.Developer.Country</p>
+                    <p><strong>Games:</strong> 
+                     @foreach(var game in Model.Developer.Games)
+                        {
+                            @game.Title
+                            <br>
+                        }
+                 </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-page="./IndexD" class="btn btn-secondary">Turn back</a>
+        </div>
+    </div>
+</div>

@@ -9,15 +9,9 @@ namespace VideogameManager.Pages.Files
         private readonly GameService _gameService;
         public string[] LogEntries { get; private set; } = Array.Empty<string>();
 
-        public FilesModel(GameService gameService)
-        {
-            _gameService = gameService;
-        }
+        public FilesModel(GameService gameService) => _gameService = gameService;
 
-        public void OnGet()
-        {
-            LogEntries = _gameService.GetLogEntries();
-        }
+        public void OnGet() => LogEntries = _gameService.GetLogEntries();
 
         public IActionResult OnPostExportJson()
         {

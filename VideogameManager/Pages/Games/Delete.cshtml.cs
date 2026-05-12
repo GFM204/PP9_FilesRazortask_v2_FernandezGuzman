@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using VideogameManager.Data;
 using VideogameManager.Models;
 using VideogameManager.Services;
 
@@ -7,31 +10,47 @@ namespace VideogameManager.Pages.Games
 {
     public class DeleteModel : PageModel
     {
-        private readonly GameService _gameService;
+        private readonly GameStoreContext _context;
+        public SelectList Developers { get; set; }
 
-        public Game Game { get; private set; } = default!;
 
-        public DeleteModel(GameService gameService)
+        [BindProperty]
+        public Game Game { get; set; }
+
+
+        public DeleteModel(GameStoreContext context) => _context = context;
+
+        public async Task<IActionResult> OnGetAsync(int id)
         {
-            _gameService = gameService;
-        }
 
-        public IActionResult OnGet(int id)
-        {
-            var game = _gameService.GetById(id);
+            Game = await _context.Games.Include(g => g.Developer).FirstOrDefaultAsync(m => m.Id == id);
 
-            if (game == null)
+            if (Game == null)
             {
                 return RedirectToPage("./Index");
             }
-
-            Game = game;
             return Page();
         }
 
-        public IActionResult OnPost(int id)
+        public async Task<IActionResult> OnPostAsync(int id)
         {
-            _gameService.Delete(id);
+
+           
+            Game gameToDelete = await _context.Games.FindAsync(Game.Id);
+
+
+            if (gameToDelete != null)
+            {
+                try
+                {
+                    _context.Games.Remove(gameToDelete);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateException)
+                {
+                    return RedirectToPage("./Delete", new { id = Game.Id, saveChangesError = true });
+                }
+            }
             return RedirectToPage("./Index");
         }
     }
